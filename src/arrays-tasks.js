@@ -520,9 +520,6 @@ function compareNumbers(a, b) {
 }
 
 function getMaxItems(arr, n) {
-  if (arr.length < 1) {
-    return [];
-  }
   const newArr = arr.sort(compareNumbers);
   return newArr.slice(0, n);
 }
